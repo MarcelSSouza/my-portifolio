@@ -1,3 +1,3 @@
-# O Portfólio profissional do time Gustavo e Marcel
+# O Portfólio profissional de Marcel
 
 ## [Portfólio](http://guscel.github.io)
