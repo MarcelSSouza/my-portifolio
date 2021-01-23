@@ -14,6 +14,28 @@ menuItens.forEach(item => {
     });
 });
 
+$("#contato").submit(function (e) {
+    var email = $("#email").val()
+    var textArea = $("#textArea").val()
+    e.preventDefault();
+    var form = $(this);
+    var url = form.attr('action');
+    $.ajax({
+        url: url,
+        method: "POST",
+        dataType: "json",
+        data: {
+            email: email,
+            message: textArea
+        },
+        success: function (data) {
+            $("#email").val('')
+            $("#textArea").val('')
+            alert("Success!")
+        }
+    });
+});
+
 function smoothScrollTo(endX, endY, duration) {
     const startX = window.scrollX || window.pageXOffset;
     const startY = window.scrollY || window.pageYOffset;

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Helvetica";
-  src: url("../assets/helvetica.otf")
+  src: url("./assets/helvetica.otf")
 }
 html, body {
   width: 100%;
@@ -42,15 +42,10 @@ main {
 
 .anime-special-1 {
   opacity: 0;
-  transform: translate3d(-70%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
   transition: 2s;
 }
 
-.anime-special-2 {
-  opacity: 0;
-  transform: translate3d(-50%, 0, 0);
-  transition: 3s;
-}
 
 .anime-start {
   opacity: 1;
@@ -60,7 +55,6 @@ main {
 .guscel {
   position: absolute;
   text-align: center;
-  left:25%;
   top: 40%;
   font-size: 10vh;
   font-family: Helvetica;
